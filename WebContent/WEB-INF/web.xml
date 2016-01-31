@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+	<servlet>
+		<servlet-name>CertificateTypeServlet</servlet-name>
+		<servlet-class>com.eCertificate.servlet.CertificateTypeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CertificateTypeServlet</servlet-name>
+		<url-pattern>/get_certificates</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CertificateMaterialsServlet</servlet-name>
+		<servlet-class>com.eCertificate.servlet.CertificateMaterialsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CertificateMaterialsServlet</servlet-name>
+		<url-pattern>/get_certificate_material</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CertificateProcessServlet</servlet-name>
+		<servlet-class>com.eCertificate.servlet.CertificateProcessServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CertificateProcessServlet</servlet-name>
+		<url-pattern>/get_certificate_process</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CertificateOrganizationServlet</servlet-name>
+		<servlet-class>com.eCertificate.servlet.CertificateOrganizationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CertificateOrganizationServlet</servlet-name>
+		<url-pattern>/get_certificate_organization</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>WayServlet</servlet-name>
+		<servlet-class>com.eCertificate.servlet.WayServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WayServlet</servlet-name>
+		<url-pattern>/get_certificate_related_address</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>com.eCertificate.servlet.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.eCertificate.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdateUserServlet</servlet-name>
+		<servlet-class>com.eCertificate.servlet.UpdateUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateUserServlet</servlet-name>
+		<url-pattern>/upload_user_info</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PayMoneyServlet</servlet-name>
+		<servlet-class>com.eCertificate.servlet.PayMoneyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PayMoneyServlet</servlet-name>
+		<url-pattern>/servlet/PayMoneyServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>StartTableServlet</servlet-name>
+		<servlet-class>com.eCertificate.servlet.StartTableServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>OrderDetailServlet</servlet-name>
+		<servlet-class>com.eCertificate.servlet.OrderDetailServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>PayServlet</servlet-name>
+		<servlet-class>com.eCertificate.servlet.PayServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>CheckTableServlet</servlet-name>
+		<servlet-class>com.eCertificate.servlet.CheckTableServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ChangeTableServlet</servlet-name>
+		<servlet-class>com.eCertificate.servlet.ChangeTableServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UnionTableServlet</servlet-name>
+		<servlet-class>com.eCertificate.servlet.UnionTableServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UnionTableServlet2</servlet-name>
+		<servlet-class>com.eCertificate.servlet.UnionTableServlet2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StartTableServlet</servlet-name>
+		<url-pattern>/servlet/StartTableServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>OrderDetailServlet</servlet-name>
+		<url-pattern>/servlet/OrderDetailServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PayServlet</servlet-name>
+		<url-pattern>/servlet/PayServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CheckTableServlet</servlet-name>
+		<url-pattern>/servlet/CheckTableServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ChangeTableServlet</servlet-name>
+		<url-pattern>/servlet/ChangeTableServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UnionTableServlet</servlet-name>
+		<url-pattern>/servlet/UnionTableServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UnionTableServlet2</servlet-name>
+		<url-pattern>/servlet/UnionTableServlet2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SurveyServlet</servlet-name>
+		<servlet-class>SurveyServlet</servlet-class>
+		<init-param>
+			<param-name>resultsDir</param-name>
+			<param-value>d:\workspace\</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SurveyServlet</servlet-name>
+		<url-pattern>/SurveyServlet/*</url-pattern>
+	</servlet-mapping>
+
+	<filter>
+		<filter-name>EF</filter-name>
+		<filter-class>com.eCertificate.filter.EncodingFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>EF</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+</web-app>
+
